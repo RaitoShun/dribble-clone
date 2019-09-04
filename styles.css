@@ -1,0 +1,737 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	overflow-y: hidden;
+}
+
+.navbar {
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 0.01px solid rgba(300, 300, 300, 0.1);
+	padding: 0px;
+	height: 6em;
+	transition: all 0.5s; 
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 9;
+	opacity: 0;
+	transform: translateY(-50%);
+
+}
+ .active-nav h2 {
+	color: red;
+	transition: all 0.5s;
+}
+.active-nav ul{
+	color: black;
+	transition: all 0.5s;
+}
+
+.active-nav .clicker-nav{
+	color: red;
+	border-color: red;
+}
+
+ .active-nav { 
+	background-color: white;
+	position: fixed;
+	border-bottom: none; 
+}
+
+
+.navbar h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+	padding-top: 0.5em;
+
+}
+ .clicker {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: red;
+  font-size: 1.2em;
+  background: transparent;
+  border: solid red 2px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.8s;
+  padding: .4em;
+  text-align: center;
+  width: 50%;
+}
+	
+  .clicker:hover {
+	background-color: rgba(153,153,153,0.2);
+	cursor: pointer;
+}
+  .clicker:active {
+	top:1px;
+
+}
+
+.active .clicker{
+	color: red;
+	border-color: red;
+}
+.active-nav .fa-bars{
+	color: black;
+}
+
+ .clicker-nav{
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  color: white;
+  border: solid white 1px; 
+  padding: 0.6em;
+  width: 10%;
+}
+	
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+	min-width: 10%;
+	height: 10%;
+	transform: translateY(2em) translateX(1.5em);
+	position: fixed;
+	opacity: 1;
+	
+}
+
+.nav-links li {
+	list-style: none;
+	display: inline-block;
+	font-size: 0.9em;
+	cursor: pointer;
+	
+}
+
+.cover {
+	position: absolute;
+	background-color: rgba(31,51,82,1);
+	width: 100%;
+	transition: all 4s;
+	text-align: center;
+	height: 100%;
+	opacity: 1;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.landing {
+	color: white;
+	text-align: center;
+	height: auto;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-style: none;
+	height: 100vh;
+	width: 100%;
+}
+
+.land-text {
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	text-align: center;
+	vertical-align: middle;
+	width: 50%;
+	z-index: 3;
+	transform: translateY(50%);
+}
+
+.middletext{
+	font-size: 3.7em;
+	text-decoration: none;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	transition: all .75s;
+	opacity: 0;
+	transform: translateY(50%);
+}
+
+.bottomtext{
+	transition: all 1.25s;
+	opacity: 0; 
+}
+
+.youtube {
+	border-radius: 100%;
+	position: absolute;
+	text-align: center;
+	line-height: 100%;
+	cursor: pointer;
+	top: 60%;
+	left: 49%;
+	width: 5em;
+	height: 5em;
+	z-index: 3;
+	transition: all .2s;
+	pointer-events: none;
+	transform: translateY(100%);
+	opacity: 0;
+
+}
+.fa{
+	transition: all 2s;
+	z-index: 3;
+	opacity: 0;
+}
+
+.filler{
+	position: relative;
+	background-color: red;
+	text-align: center;
+	height: 70%;
+	vertical-align: middle;
+	padding-top: 40%;
+	transition: all 1s;
+	color: white;
+	transform: translateY(100%);
+}
+
+.circle-r {
+	position: absolute;
+	border-radius: 100%;
+	border: 3px solid transparent;
+	overflow: hidden;
+	top: 60%;
+	left: 49%;
+	z-index: 3;
+	transition: all .25s;
+	opacity: 1;
+}
+
+.soundgif {
+	position: absolute;
+	text-align: left;
+	top: 90%;
+	left: 5%;
+	transition: all 2s;
+	opacity: 0;
+
+}
+
+.soundgif .fa {
+	position: relative;
+	left: 90%;
+}
+
+.xspot{
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	transition: all 0.5;
+	width: 3em;
+	height: 3em;
+	border-radius: 100%;
+
+}
+.xfact{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.xmark {
+	opacity: 0;
+	position: relative;
+	transition: all 1.25s;
+	transform: translateY(81%);
+	font-weight: bold;
+	top: -80%;
+
+}
+
+.initicon {
+	opacity: 1; 
+}
+
+
+.infobox {
+	background-color: white;
+	height: 100vh;
+	padding: 10% 20% 0% 20%;
+}
+
+.infotext{
+	float: left;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	width: 30%;
+	transform: translateY(0%);
+	opacity: 1;
+	height: 50%;
+}
+
+.uppertext{
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.infostuff{
+	transition: all 1.75s;
+	height: 80%;
+}
+
+.inactive-text {
+	opacity: 0;
+	transform: translateY(50%);
+}
+.one{
+	text-align: left;
+}
+
+.two{
+	text-align: left;
+	float: right;
+}
+
+.imghold{
+	text-align: right;
+}
+
+.imghold-two{
+	text-align: left;
+}
+
+.inactive-img {
+	opacity: 0;
+	transform: scale(1.3);
+}
+
+h4{
+	color: red;
+}
+h3{
+	font-weight: normal;
+}
+
+.spacer{
+	height: 20px;
+}
+
+img{
+	width: 60%;
+	height: auto;
+	transition: all 1s;
+
+}
+
+.scroller {
+	height: 100vh;
+	position: absolute;
+	scroll-behavior: smooth;
+	overflow: hidden;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	pointer-events: none;
+	z-index: 0;
+}
+canvas {
+	position: relative;
+	z-index: 9;
+	background-color: transparent;
+}
+
+.fa-bars{
+	opacity: 0;
+	position: absolute;
+	left: 10%;
+	top: 30%;
+	cursor: pointer;
+	pointer-events: none;
+
+}
+
+.navlist{
+	opacity: 0;
+	pointer-events: none;
+}
+
+.animation{
+	width: 100%;
+}
+
+/*Media queries for responsivenes!*/
+
+@media only screen and (min-width: 755px) and (max-width: 1172px){   /*Tablets*/
+
+	.youtube{
+		left: 48%;
+	}
+
+	.circle-r{
+		left: 48%;
+	}
+
+	.xspot{
+		left: 49%;
+	}
+
+	.fa-bars{
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	 .clicker-nav{
+		  left: 75%;
+		  padding: 0.6em 1em 0.6em 1em;
+		  width: 10%;
+	}
+
+	.land-text{
+		top: 30%;
+	}
+	
+    .bottom-text {
+		font-size: 1em;
+	}
+
+	.middletext{
+		font-size: 3.5em;
+		padding-bottom: 10px;
+	}
+
+	.infobox .clicker{
+		margin-left: 25%;
+	}
+	.infotext{
+		width: 100%;
+		text-align: center;
+	}
+	.uppertext{
+	    width: 100%;
+	    text-align: center;
+	}
+	.infostuff{
+		text-align: center;
+	}
+
+	.imghold{
+		width: 100%;
+		text-align: center;
+	}
+
+	.imghold-two{
+		width: 100%;
+		text-align: center;
+
+	}	
+
+	img{
+		width: 70%; 
+	}
+	.nav-links{
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.navlist .nav-links {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		opacity: 1;
+	}
+
+	.navlist .nav-links li {
+		display: block;
+		line-height: 3em;
+		font-size: 1em;
+		text-decoration: underline;
+	}
+
+	.navlist{
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		height: 200%;
+		color: black;
+		top: 100%;
+		text-align: center;
+		opacity: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 755px){
+
+
+	.youtube {
+		top: 60%;
+		left: 43%;
+	}
+	.circle-r {
+		top: 60%;
+		left: 43%;
+	}
+
+	.xspot{
+		left: 46.7%;
+	}
+	.navbar {
+		font-size: 0.6em;
+
+	}
+
+	.nav-links{
+		opacity: 1;
+		width: 5%;
+		pointer-events: none;
+	}
+
+	.fa-bars{
+		opacity: 1;
+		pointer-events: all;
+	}
+	 .clicker-nav{
+	  	width: 10%;
+	  	left: 70%;
+	  	padding: 1em 1em 1em 1em;
+	}
+
+    .bottom-text {
+		font-size: 0.1em;
+		top: 20%;
+	}
+
+	.middletext{
+		font-size: 2.5em;
+		padding-bottom: 5px;
+	}
+
+	.infobox {
+		display: block;
+		padding: 2% 10% 0% 10%;
+		text-align: center;
+	}
+
+	.infobox .clicker{
+		margin-left: 25%;
+	}
+	.infotext{
+		width: 100%;
+		text-align: center;
+	}
+	.uppertext{
+	    width: 100%;
+	    text-align: center;
+	}
+	.infostuff{
+		text-align: center;
+	}
+
+	.imghold{
+		width: 100%;
+		margin-top: 10%;
+		text-align: center;
+	}
+
+	.imghold-two{
+		width: 100%;
+		text-align: center;
+		padding-top: 50px;
+		margin-top: 10%;
+	}	
+
+	img{
+		width: 100%; 
+	}
+
+    .nav-links{
+		opacity: 0;
+	}
+
+	.navlist .nav-links {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		opacity: 1;
+	}
+
+	.navlist .nav-links li {
+		display: block;
+		line-height: 3em;
+		font-size: 1em;
+		text-decoration: underline;
+	}
+
+	.navlist{
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		height: 200%;
+		color: black;
+		top: 100%;
+		text-align: center;
+		opacity: 0;
+	}
+
+}
+
+@media only screen and (max-width: 360px){
+	.navbar {
+		font-size: 0.6em;
+
+	}
+	 .clicker-nav{
+	  	width: 10%;
+	  	left: 70%;
+	  	padding: 1em 1em 1em 1em;
+	}
+
+	.nav-links{
+		width: 5%;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+    .bottom-text {
+		font-size: 0.1em;
+	}
+
+	.middletext{
+		font-size: 2.5em;
+		padding-bottom: 5px;
+	}
+
+	.infobox {
+		display: block;
+		padding: 2% 10% 0% 10%;
+		text-align: center;
+	}
+
+	.infobox .clicker{
+		margin-left: 25%;
+	}
+	.infotext{
+		width: 100%;
+		text-align: center;
+	}
+	.uppertext{
+	    width: 100%;
+	    text-align: center;
+	}
+	.infostuff{
+		text-align: center;
+	}
+
+	.imghold{
+		width: 100%;
+		margin-top: 10%;
+		text-align: center;
+	}
+
+	.imghold-two{
+		width: 100%;
+		text-align: center;
+		margin-top: 10%;
+	}	
+
+	img{
+		padding-top: 50px;
+		width: 100%; 
+	}
+	.youtube {
+		top: 75%;
+		left: 38%;
+
+	}
+	.circle-r {
+		top: 75%;
+		left: 38%;
+	}
+
+	.xspot{
+		left: 43%;
+	}
+
+	.navlist .nav-links {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+
+	.navlist .nav-links li {
+		display: block;
+		text-decoration: underline;
+
+	}
+
+	.navlist{
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		height: 200%;
+		color: black;
+		top: 100%;
+		text-align: center;
+		opacity: 0;
+	}
+
+
+}
+
+@media only screen and (max-height: 568px) and (max-width: 1170px){
+
+	img{
+		width: 80%;
+		margin-top: 80px;
+	}
+
+	.imghold-two{
+		height: 110%;
+		margin-top: 80px;
+	}
+	.infobox{
+		transform: translateY(20%);
+
+	}
+	
+	.two{
+		margin-top: 100px;
+	}
+	.imghold-two{
+		height: 110%;
+	}
+
+	.middletext{
+		font-size: 1.78em;
+		padding-bottom: 10px;
+	}
+
+	.bottomtext{
+		font-size: 1em;
+		top: 20%;
+	}	
+}
+
+
+@media only screen and (max-width: 600px){
+	.land-text{
+		font-size: 0.8em;
+	}
+}
